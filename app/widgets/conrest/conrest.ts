@@ -19,6 +19,10 @@ module ConREST {
       routeUrl: '/workflows/:workflowId/calls/:callId',
       controller: 'ConRESTVM'
     }, {
+      templateUrl: 'callOverviewPage',
+      routeUrl: '/calls',
+      controller: 'ConRESTVM'
+    }, {
       templateUrl: 'callFormPage',
       routeUrl: '/register/call',
       controller: 'ConRESTVM'

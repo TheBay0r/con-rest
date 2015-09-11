@@ -1,1 +1,57 @@
+<md-toolbar md-scroll-schrink class="md-hue-2">
+	<div class="md-toolbar-tools">
+		<i class="mdi-action-view-headline"
+		   ng-click="vm.toggleMenu('left')"
+		   aria-label="Open menu"></i>
+
+		<h1>[conREST]</h1>
+	</div>
+</md-toolbar>
 <ng-view autoscroll="true"></ng-view>
+<md-sidenav class="md-sidenav-left" md-component-id="left">
+	<md-toolbar class="md-hue-2">
+		<h1 class="md-toolbar-tools">conRest Menu</h1>
+	</md-toolbar>
+	<div layout="row" flex>
+		<md-content layout-fill flex ng-controller="ConRESTVM">
+			<md-list>
+				<md-list-item>
+					<md-button class="menu-item"
+					           layout-fill
+					           href="#/register/call"
+					           ng-click="vm.close()">
+						Register Call
+					</md-button>
+				</md-list-item>
+				<md-divider></md-divider>
+				<md-list-item>
+					<md-button class="menu-item"
+					           layout-fill
+					           href="#/register/workflow"
+					           ng-click="vm.close()">
+						Register Workflow
+					</md-button>
+				</md-list-item>
+				<md-divider></md-divider>
+				<md-list-item>
+					<md-button class="menu-item"
+					           layout-fill
+					           href="#/calls"
+					           ng-click="vm.close()">
+						Call Overview
+					</md-button>
+				</md-list-item>
+				<md-divider></md-divider>
+				<md-list-item>
+					<md-button class="menu-item"
+					           layout-fill
+					           href="#/"
+					           ng-click="vm.close()">
+						Workflow Overview
+					</md-button>
+				</md-list-item>
+				<md-divider></md-divider>
+			</md-list>
+		</md-content>
+	</div>
+</md-sidenav>

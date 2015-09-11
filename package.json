@@ -41,7 +41,7 @@
     "grunt-string-replace": "^0.2.7",
     "grunt-template": "^0.2.3",
     "grunt-ts": "^4.1.0",
-    "grunt-tslint": "^2.0.0",
+    "grunt-tslint": "~2.0.0",
     "grunt-version": "~0.3.0",
     "karma": "~0.12.16",
     "karma-chai": "^0.1.0",
